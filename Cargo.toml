@@ -1,0 +1,14 @@
+[package]
+name = "charbench"
+version = "0.1.0"
+authors = ["Árpád Goretity <h2co3@h2co3.org>"]
+edition = "2018"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = {version = "0.3.4", features = ["html_reports"] }
+
+[[bench]]
+name = "my_benchmark"
+harness = false
